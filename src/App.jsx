@@ -1,6 +1,6 @@
 import { useState } from "react";
-import StudentList from "./components/StudentList";
-// import StudentDetails from "./components/StudentDetails";
+// import StudentList from "./components/StudentList";
+import StudentDetails from "./components/StudentDetails";
 
 export default function App() {
   // Shared state in Parent
@@ -22,14 +22,14 @@ export default function App() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Child 1: Student List */}
-          <StudentList
+          {/* <StudentList
             students={students}
             onSelect={setSelectedStudent}
             selectedStudent={selectedStudent}
-          />
+          /> */}
 
           {/* Child 2: Student Details */}
-          {/* <StudentDetails student={selectedStudent} /> */}
+          <StudentDetails student={selectedStudent} />
         </div>
       </div>
     </div>
