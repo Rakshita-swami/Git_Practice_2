@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import PersonalInfo from "./components/PersonalInfo";
 import Skills from "./components/Skills";
-// import Experience from "./components/Experience";
-// import Review from "./components/Review";
+import Experience from "./components/Experience";
+import Review from "./components/Review";
 
 const App = () => {
   const [step, setStep] = useState(1);
@@ -55,15 +55,15 @@ const App = () => {
             prevStep={prevStep}
           />
         )}
-        {/* {step === 3 && (
+        {step === 3 && (
           <Experience
             formData={formData}
             handleChange={handleChange}
             nextStep={nextStep}
             prevStep={prevStep}
           />
-        )} */}
-        {/* {step === 4 && <Review formData={formData} prevStep={prevStep} />} */}
+        )}
+        {step === 4 && <Review formData={formData} prevStep={prevStep} />}
       </div>
     </div>
   );
